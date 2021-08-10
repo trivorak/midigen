@@ -1,0 +1,7 @@
+*.json
+.DS_Store
+*.png
+*.jpg
+*.mid
+*.norm
+__pycache__
