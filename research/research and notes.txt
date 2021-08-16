@@ -26,11 +26,19 @@ image.save("image.png")
 ========================================================
 
 ### Converting an image to another "colorspace" see Docs for Modes
+### also resizing to 128 pixel tall
 
 from PIL import Image
-with Image.open("inputimg.png") as im:
-    im = im.convert("L")
-		
-im.save("image.png")
+import math
+    
+im = Image.open("input.jpg")
+width, height = im.size
+divisor = math.floor(height/128)
+im = im.quantize(256,method=1)
+im = im.convert('1',dither=0)
+im = im.resize((math.floor(width/divisor),math.floor(height/divisor)))
+    
+im.save("output.png")
+
 #################################################
 =========================================================
