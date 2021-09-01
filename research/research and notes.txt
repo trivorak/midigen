@@ -61,3 +61,20 @@ for element in aList:
 	aListInt.append(int(element,16))
 
 
+#########################################################
+=========================================================
+appending to List based on set size. So if you need your hex to be in groups of 10
+
+a = [10,20,15,20]
+
+group = 10
+
+for i in range(0,group-len(a)%group):
+	a.append(0)
+
+print(a)
+
+##Output = [10, 20, 15, 20, 0, 0, 0, 0, 0, 0]
+
+#########################################################
+=========================================================
