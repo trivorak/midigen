@@ -42,3 +42,17 @@ im.save("output.png")
 
 #################################################
 =========================================================
+
+### Take in String and split by char len
+
+# Input Static for example
+a = "53495A453D33305839300D0A7C2D2D2D"
+
+# Create blank list
+aList = []
+
+# Split by every 2 characters and append to "blank list"
+for i in range(0,len(a),2):
+	aList.append(a[i:i+2])
+
+	
