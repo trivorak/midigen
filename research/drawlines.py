@@ -17,6 +17,9 @@ for i in range(0,len(a),2):
 for element in aList:
 	aListInt.append(int(element,16))
 
+# Append so list is in grounps (fix coordinate errors)
+for i in range(0,2-len(aListInt)%2):
+	aListInt.append(0)
 
 im = Image.new("RGB",(255,255),(255,255,255))
 
