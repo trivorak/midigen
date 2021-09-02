@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw
 ### Take in String and split by char len
 
 ## Defaults
-scaleSize = 1
+#scaleSize = 1
 
 ## Input Static for example
 # a = input("Hex String: ")
@@ -31,19 +31,25 @@ for element in aList:
 	aListInt.append(int(element,16))
 
 # Append so list is in grounps (fix coordinate errors)
-for i in range(0,2-len(aListInt)%2):
+for i in range(0,5-len(aListInt)%5):
 	aListInt.append(0)
 
-for element in aListInt:
-	aWorkingList.append(round(element*scaleSize,0))
+aListInt.append(0)
+aListInt.append(0)
 
-aListInt = aWorkingList
+#for element in aListInt:
+#	aWorkingList.append(round(element*scaleSize,0))
 
-im = Image.new("RGB",(256*scaleSize,256*scaleSize),(255,255,255))
+#aListInt = aWorkingList
+
+im = Image.new("RGB",(256,256),(255,255,255))
 
 draw = ImageDraw.Draw(im)
 
-draw.polygon(xy=aListInt,outline=(0,0,0))
+print(len(aListInt))
+
+for i in range(0,len(aListInt)-2,5):
+	draw.line(xy=(aListInt[i],aListInt[i+1],aListInt[i+5],aListInt[i+6]),fill=(aListInt[i+2],aListInt[i+3],aListInt[i+4]))
 
 im.save("output.png")
 
