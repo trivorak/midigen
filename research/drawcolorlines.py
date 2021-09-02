@@ -2,6 +2,9 @@ from PIL import Image, ImageDraw
 
 ### Take in String and split by char len
 
+## Defaults
+scaleSize = 1
+
 ## Input Static for example
 # a = input("Hex String: ")
 
