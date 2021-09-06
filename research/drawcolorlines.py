@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw
 ### Take in String and split by char len
 
 ## Defaults
-scaleSize = 4
+scaleSize = 6
 
 ## Input Static for example
 # a = input("Hex String: ")
@@ -51,5 +51,5 @@ print(len(aListInt))
 for i in range(0,len(aListInt)-2,5):
 	draw.line(xy=(round(aListInt[i]*scaleSize,0),round(aListInt[i+1]*scaleSize,0),round(aListInt[i+5]*scaleSize,0),round(aListInt[i+6]*scaleSize,0)),fill=(aListInt[i+2],aListInt[i+3],aListInt[i+4],255))
 
-im.save("output.png")
+im.save("outputColorLines.png")
 
