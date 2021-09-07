@@ -22,6 +22,7 @@ with open("input.txt","r") as f:
 	a = f.read()
 
 # Convert input into a string
+a = a.replace('\n','')
 a = str(a)
 
 # Split by every 2 characters and append to "blank list"
@@ -37,7 +38,7 @@ for i in range(0,3-len(aListInt)%3):
 	aListInt.append(0)
 
 totalPixels = aListInt
-
+print(len(totalPixels)/3)
 # Create a new File to draw pixels
 im = Image.new("RGB",(getWidth(len(totalPixels)/3,width,height),getHeight(len(totalPixels)/3,width,height)),(0,0,0))
 pixels = im.load()
