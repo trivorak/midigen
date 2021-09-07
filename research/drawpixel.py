@@ -19,13 +19,10 @@ def getWidth(pixels,rWidth,rHeight):
 
 # Input Hex from local text file
 with open("input.txt","r") as f:
-	a = f.readlines()
+	a = f.read()
 
 # Convert input into a string
 a = str(a)
-
-#Remove the [' & '] from string - Windows endline
-a = a[2:(len(a)-2)]
 
 # Split by every 2 characters and append to "blank list"
 for i in range(0,len(a),2):
@@ -39,11 +36,7 @@ for element in aList:
 for i in range(0,3-len(aListInt)%3):
 	aListInt.append(0)
 
-
 totalPixels = aListInt
-
-#DBG
-print(len(totalPixels))
 
 # Create a new File to draw pixels
 im = Image.new("RGB",(getWidth(len(totalPixels)/3,width,height),getHeight(len(totalPixels)/3,width,height)),(0,0,0))

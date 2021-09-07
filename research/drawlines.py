@@ -9,13 +9,10 @@ scaleSize = 1
 # a = input("Hex String: ")
 
 with open("input.txt","r") as f:
-	a = f.readlines()
+	a = f.read()
 
 #Convert to sring
 a = str(a)
-
-# Remove the [' & '] from string
-a = a[2:(len(a)-2)]
 
 # Create blank list
 aList = []
@@ -45,5 +42,5 @@ draw = ImageDraw.Draw(im)
 
 draw.polygon(xy=aListInt,outline=(0,0,0))
 
-im.save("output.png")
+im.save("outputBWLines.png")
 
