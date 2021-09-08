@@ -21,8 +21,10 @@ def getWidth(pixels,rWidth,rHeight):
 with open("input.txt","r") as f:
 	a = f.read()
 
-# Convert input into a string
+# Strip carriage return from string
 a = a.replace('\n','')
+
+# Convert input into a string
 a = str(a)
 
 # Split by every 2 characters and append to "blank list"

@@ -11,6 +11,9 @@ scaleSize = 1
 with open("input.txt","r") as f:
 	a = f.read()
 
+# Strip carriage return from string
+a = a.replace('\n','')
+
 #Convert to sring
 a = str(a)
 
