@@ -31,4 +31,4 @@ for element in colorList:
 	index = index + 1
 
 #Output Image
-nim.save('nimoutput.png')	
+nim.save('nimoutput.png')

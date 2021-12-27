@@ -41,7 +41,7 @@ aWorkingList = []
 for i in range(0,len(a),2):
 	aList.append(a[i:i+2])
 
-# Loop hex to int into new list 
+# Loop hex to int into new list
 for element in aList:
 	aListInt.append(int(element,16))
 
