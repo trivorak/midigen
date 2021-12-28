@@ -6,3 +6,4 @@
 *.norm
 *.svg
 __pycache__
+input.txt
