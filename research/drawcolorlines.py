@@ -14,7 +14,7 @@ with open("input.txt","r") as f:
 # Remove Carriage Returns
 a = a.replace('\n','')
 
-#Convert to sring
+#Convert to string
 a = str(a)
 
 # Create blank list
@@ -26,7 +26,7 @@ aWorkingList = []
 for i in range(0,len(a),2):
 	aList.append(a[i:i+2])
 
-# Loop hex to int into new list 
+# Loop hex to int into new list
 for element in aList:
 	aListInt.append(int(element,16))
 
@@ -47,4 +47,3 @@ for i in range(0,len(aListInt)-2,5):
 	draw.line(xy=(round(aListInt[i]*scaleSize,0),round(aListInt[i+1]*scaleSize,0),round(aListInt[i+5]*scaleSize,0),round(aListInt[i+6]*scaleSize,0)),fill=(aListInt[i+2],aListInt[i+3],aListInt[i+4],255))
 
 im.save("outputColorLines.png")
-
