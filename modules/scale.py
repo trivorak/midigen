@@ -13,7 +13,7 @@ def ranBetweenRange(min,max):
 	return random.random()*(max-min)+min
 
 
-#Return Random Musical Root Number 
+# Return Random Musical Root Number 
 # 0.5 - 12.49 to keep rounding even across all numbers
 def ranRootNote():
 	return round(ranBetweenRange(0.5,12.49))
@@ -29,6 +29,6 @@ for i in range (0, len(major)*12):
 		b.append(resultValue)
 	
 	
-		
+# Test		
 print('Root = ' + str(root+12))
 print(b)

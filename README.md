@@ -28,5 +28,9 @@ Refocus of this project to use a Raspberry Pi Zero 2 W with a camera to take pic
 
 ---
 
-The planning process of project is underway so there is no path yet into what will be required to run this code. It will be based around Python3 
+The planning process of project is underway so there is no path yet into what will be required to run this code. It will be based around Python3. All current requirements have been included in the requirements.txt file 
+
+```bash
+pip install -r requirements.txt
+```
 
