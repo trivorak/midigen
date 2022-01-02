@@ -26,7 +26,7 @@ Refocus of this project to use a Raspberry Pi Zero 2 W with a camera to take pic
 
 
 
-### Install instructions
+### Install Instructions
 
 ---
 
