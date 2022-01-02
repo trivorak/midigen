@@ -1,6 +1,7 @@
 import random
 
 # Create Blank Array
+# For testing purposes
 b = []
 # Scale
 major = [0,2,4,5,7,9,11]
