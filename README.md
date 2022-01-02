@@ -2,20 +2,20 @@
 
 ### Refocus
 ---
-Refocus of this project to use a Raspberry Pi Zero 2 W with a camera to take pictures and generate midi output from those images. Research will stay in project but the main focus of the project is changed. 
+Refocus of this project to use a Raspberry Pi Zero 2 W with a camera to take pictures and generate midi output from those images. Research will stay in project but the main focus of the project is changed.
 
-### Roadmap 
+### Roadmap
 ---
  Generate an array based on notes in scale
 - [x] Snap to Key
 - [ ] RPI camera module
-- [ ] Image Color Look up 
+- [ ] Image Color Look up
 - [ ] Ever changing image every step (take picture between notes)
 - [ ] Midi Not Output
 
 
 
-#### "To-Do" Break Down
+#### "ToDo" Break Down
 
 - [x] Randomly select root note
 - [x] Generate a scale array to use for note looking (snap to key/scale)
@@ -35,4 +35,3 @@ The planning process of project is underway, so there is no path yet into what w
 ```bash
 pip install -r requirements.txt
 ```
-
