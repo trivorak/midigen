@@ -1,4 +1,5 @@
 import random
+import modules.scalelist
 
 # Main Functions
 # Generic
