@@ -1,7 +1,7 @@
 normalList = []
 
 def getDifference(input):
-	return max(input) - min(input)
+	return getMax(input) - getMin(input)
 
 def getMin(input):
 	return min(input)
@@ -9,8 +9,8 @@ def getMin(input):
 def getMax(input):
 	return max(input)
 
-def normal(data, min, diff):
-	return (data-min)/diff
+def normal(data, minimum, diff):
+	return (data-minimum)/diff
 
 # Main Loop
 def normalLoop(input):

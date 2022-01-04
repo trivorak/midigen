@@ -1,23 +1,17 @@
 import random
-
-# Create Blank Array
-# For testing purposes
-b = []
-# Scale
-major = [0,2,4,5,7,9,11]
+import modules.scalelist
 
 # Main Functions
-
 # Generic
 # Return Random Number between Range
-def ranBetweenRange(min,max):
+def randomBetweenRange(min,max):
 	return random.random()*(max-min)+min
 
 
 # Return Random Musical Root Number
 # 0.5 - 11.49 to keep rounding even across all numbers
-def ranRootNote():
-	return round(ranBetweenRange(-0.5,11.49))
+def randomRootNote():
+	return round(randomBetweenRange(-0.5,11.49))
 
 
 # Return Array of Scale Notes based on:
@@ -34,6 +28,8 @@ def generateScaleArray(root,scale,scaleArray):
 		elif resultValue >= 0:
 			scaleArray.append(resultValue)
 		i += 1
+	return(scaleArray)
+
 
 # Return note based on note array
 # Rounds down to nearest note
