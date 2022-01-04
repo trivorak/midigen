@@ -6,7 +6,6 @@ def getDifference(input):
 def getMin(input):
 	return min(input)
 
-# For Debugging
 def getMax(input):
 	return max(input)
 
