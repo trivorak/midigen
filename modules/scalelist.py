@@ -11,3 +11,10 @@ pentatonicMajorScale = [0,2,4,7,9]
 pentatonicMinorScale = [0,3,5,7,10]
 
 scales = [majorScale, naturalMinorScale, harmonicMinorScale, melodicMinorScale, dorianScale, locrianScale, lydianScale, mixolydianScale, phrygianScale, pentatonicMajorScale, pentatonicMinorScale]
+
+def getAllScales():
+	return scales
+
+def getScaleCount():
+	return len(scales)
+
