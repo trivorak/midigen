@@ -8,10 +8,17 @@ def randomBetweenRange(min,max):
 	return random.random()*(max-min)+min
 
 
+# Funciton to "Evenly Round" / Fix disribution of rounding
+def evenRounding(minValue,maxValue):
+	minV = min(minValue,maxValue) - 0.5
+	maxV = max(minValue,maxValue) + 0.499
+	return round(randomBetweenRange(minV,maxV))
+
+
 # Return Random Musical Root Number
 # 0.5 - 11.49 to keep rounding even across all numbers
 def randomRootNote():
-	return round(randomBetweenRange(-0.5,11.49))
+	return evenRounding(0,12)
 
 
 # Return Array of Scale Notes based on:
@@ -19,6 +26,7 @@ def randomRootNote():
 # scale = what's your scale offset see major above
 # scaleArray = Empty array
 def generateScaleArray(root,scale,scaleArray):
+	root -= 12
 	scaleArray.clear()
 	i = 0
 	while True:
@@ -28,7 +36,21 @@ def generateScaleArray(root,scale,scaleArray):
 		elif resultValue >= 0:
 			scaleArray.append(resultValue)
 		i += 1
+	# Print Line for Debug Purposes
+	# Delete Once Done
+	print("Root Note = " + str(root+12))
+	print("Scale = " + str(scale))
 	return(scaleArray)
+
+
+# Get Random Scale from scalelist module
+# Scale count subtracting 1 for array indexing
+def generateRandomScale():
+	scaleCount = scalelist.getScaleCount() - 1
+	randomIndex = evenRounding(0,scaleCount)
+
+	return scalelist.getScale(scalelist.getAllScales(),randomIndex)
+
 
 
 # Return note based on note array
