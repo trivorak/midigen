@@ -22,7 +22,8 @@ Refocus of this project to use a Raspberry Pi Zero 2 W with a camera to take pic
   - [x] Refactor for loop into a while true loop (cleaner)
 - [x] Snap note to Key.
 - [x] Setup a folder structure for cleaner function imports
-- [ ] Randomly select scale (From an Array of Scales)
+- [x] Randomly select scale (From an Array of Scales)
+- [ ] Figure out import sys for import errors I get on modules
 
 
 
@@ -32,6 +33,19 @@ Refocus of this project to use a Raspberry Pi Zero 2 W with a camera to take pic
 
 The planning process of project is underway, so there is no path yet into what will be required to run this code. It will be based around Python3. All current requirements have been included in the requirements.txt file
 
+#### Required
+
 ```bash
 pip install -r requirements.txt
+```
+#### Extra
+##### Update PIP - This is not needed but how I setup my environment
+
+```bash
+python3 -m pip install --upgrade pip
+```
+
+##### Install PILLOW - This is not needed but how I setup my environment
+```bash
+python3 -m pip install --upgrade Pillow
 ```
