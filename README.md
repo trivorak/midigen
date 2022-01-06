@@ -23,7 +23,7 @@ Refocus of this project to use a Raspberry Pi Zero 2 W with a camera to take pic
 - [x] Snap note to Key.
 - [x] Setup a folder structure for cleaner function imports
 - [x] Randomly select scale (From an Array of Scales)
-- [ ] Figure out import sys for import errors I get on modules
+- [x] Figure out import sys for import errors I get on modules
 
 
 
