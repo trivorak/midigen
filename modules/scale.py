@@ -1,24 +1,13 @@
 import random
 import modules.scalelist as scalelist
+import modules.utility as utility
 
-# Main Functions
-# Generic
-# Return Random Number between Range
-def randomBetweenRange(min,max):
-	return random.random()*(max-min)+min
-
-
-# Funciton to "Evenly Round" / Fix disribution of rounding
-def evenRounding(minValue,maxValue):
-	minV = min(minValue,maxValue) - 0.5
-	maxV = max(minValue,maxValue) + 0.499
-	return round(randomBetweenRange(minV,maxV))
-
+# Define Functions 
 
 # Return Random Musical Root Number
 # 0.5 - 11.49 to keep rounding even across all numbers
 def randomRootNote():
-	return evenRounding(0,12)
+	return utility.evenRounding(0,11)
 
 
 # Return Array of Scale Notes based on:
@@ -36,10 +25,7 @@ def generateScaleArray(root,scale,scaleArray):
 		elif resultValue >= 0:
 			scaleArray.append(resultValue)
 		i += 1
-	# Print Line for Debug Purposes
-	# Delete Once Done
-	print("Root Note = " + str(root+12))
-	print("Scale = " + str(scale))
+	
 	return(scaleArray)
 
 
@@ -47,7 +33,7 @@ def generateScaleArray(root,scale,scaleArray):
 # Scale count subtracting 1 for array indexing
 def generateRandomScale():
 	scaleCount = scalelist.getScaleCount() - 1
-	randomIndex = evenRounding(0,scaleCount)
+	randomIndex = utility.evenRounding(0,scaleCount)
 
 	return scalelist.getScale(scalelist.getAllScales(),randomIndex)
 
