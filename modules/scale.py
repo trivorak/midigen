@@ -11,7 +11,6 @@ def randomRootNote():
 
 # Return Array of Scale Notes based on:
 # Root = 0 - 11
-# scale = what's your scale offset see major above
 # scaleArray = Empty array
 def generateScaleArray(root,scale,scaleArray):
 	root -= 12
