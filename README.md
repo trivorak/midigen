@@ -39,13 +39,11 @@ The planning process of project is underway, so there is no path yet into what w
 pip install -r requirements.txt
 ```
 #### Extra
-##### Update PIP - This is not needed but how I setup my environment
+##### Update PIP & Install PILLOW (instead of using PIL) - This is not needed but how I setup my environment
 
 ```bash
 python3 -m pip install --upgrade pip
 ```
-
-##### Install PILLOW - This is not needed but how I setup my environment
 ```bash
 python3 -m pip install --upgrade Pillow
 ```

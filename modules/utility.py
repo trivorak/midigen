@@ -1,8 +1,7 @@
 import random 
 
-# Utiltiy Functions 
+# Utiltiy / Generic Functions 
 
-# Generic
 # Return Random Number between Range
 def randomBetweenRange(minV,maxV):
 	return random.random()*(maxV-minV)+minV

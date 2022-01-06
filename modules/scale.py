@@ -1,4 +1,3 @@
-import random
 import modules.scalelist as scalelist
 import modules.utility as utility
 
