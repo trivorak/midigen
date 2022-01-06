@@ -1,5 +1,5 @@
-from . import scalelist as scalelist
-from . import utility as utility
+from . import scalelist
+from . import utility
 
 # Define Functions 
 
