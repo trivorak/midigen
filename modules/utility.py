@@ -1,8 +1,8 @@
-import random 
+import random
 
-# Utiltiy / Generic Functions 
+# Utiltiy / Generic Functions
 ##
-### 
+###
 
 # Define Functions
 

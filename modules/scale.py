@@ -1,7 +1,7 @@
 from . import scalelist
 from . import utility
 
-# Define Functions 
+# Define Functions
 
 # Return Random Musical Root Number
 # 0.5 - 11.49 to keep rounding even across all numbers
@@ -23,7 +23,7 @@ def generateScaleArray(root,scale,scaleArray):
 		elif resultValue >= 0:
 			scaleArray.append(resultValue)
 		i += 1
-	
+
 	return(scaleArray)
 
 
