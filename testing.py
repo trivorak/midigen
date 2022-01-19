@@ -1,14 +1,17 @@
 from PIL import Image
 import modules.normal as normal
 import modules.scale as scale
-import modules.image as image
+import modules.image as img
 
 # Define Blank Array/List
 a=[ ]
 
-# Debug / Test Functions
-# print(scale.generateScaleArray(scale.randomRootNote(),scale.generateRandomScale(),a))
-# print(image.getColor(1,2))
-
+# Import Image
 im = Image.open('output.png')
-print(image.getColor(100,100,im))
+# Debug print color at pixel 100x100
+# print(img.getColor(100,100,im))
+# Debug Return Array of image color normalized 0 - 1 see modules 
+ a = normal.process(img.getImageBWArray(img.convertToMonochrome(im)))
+# Debug Print Normal List
+print(a)
+
