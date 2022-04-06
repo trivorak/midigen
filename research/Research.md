@@ -19,7 +19,7 @@ Use the command **xxd** to dump a file into hex format
 xxd -p inputfile outputfile
 ```
 My scripts are looking for a hexdump file called "input.txt" 
-An example of converting a picture to hexfile 
+An example of converting a picture to hexfile.
 
 ```bash
 xxd -p PictureOfSon.jpg input.txt
