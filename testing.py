@@ -19,4 +19,3 @@ print(img.getColor(100,100,im))
 # a = normal.process(img.getImageBWArray(img.convertToMonochrome(im)))
 # Debug Print Normal List
 # print(a)
-
