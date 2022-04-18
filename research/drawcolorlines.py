@@ -47,3 +47,4 @@ for i in range(0,len(aListInt)-2,5):
 	draw.line(xy=(round(aListInt[i]*scaleSize,0),round(aListInt[i+1]*scaleSize,0),round(aListInt[i+5]*scaleSize,0),round(aListInt[i+6]*scaleSize,0)),fill=(aListInt[i+2],aListInt[i+3],aListInt[i+4],255))
 
 im.save("outputColorLines.png")
+# Remove Test
