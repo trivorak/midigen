@@ -1,9 +1,15 @@
+import sys
 from PIL import Image, ImageDraw
 
 ### Take in String and split by char len
 
 ## Defaults
-scaleSize = 5
+#scaleSize = 1
+# arg for scale
+if (len(sys.argv) > 1 ):
+  scaleSize = int(sys.argv[1])
+else:
+  scaleSize = 1
 
 ## Input Static for example
 # a = input("Hex String: ")
