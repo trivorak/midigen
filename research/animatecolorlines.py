@@ -14,7 +14,7 @@ else:
 # Variables
 images = []
 counterVar = 1
-animationSteps = 100
+animationSteps = 10
 
 with open("input.txt","r") as f:
     a = f.read()
@@ -45,7 +45,7 @@ for i in range(0,5-len(aListInt)%5):
 aListInt.append(0)
 aListInt.append(0)
 
-bg = Image.new("RGB",(int(256*scaleSize),int(256*scaleSize)),(255,255,255))
+bg = Image.new("RGB",(int(256*scaleSize),int(256*scaleSize)),(0,0,0))
 images.append(bg)
 im = Image.new("RGBA",(int(256*scaleSize),int(256*scaleSize)),(0,0,13,0))
 print(len(aListInt))
