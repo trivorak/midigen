@@ -13,7 +13,6 @@ else:
 
 # Variables
 images = []
-counterVar = 1
 animationSteps = 10
 
 with open("input.txt","r") as f:
