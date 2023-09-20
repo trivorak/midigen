@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw
-import drawSvg as draw
+import drawsvg as draw
 
 ## Input Static for example
 # a = input("Hex String: ")
@@ -59,4 +59,4 @@ d = draw.Drawing(256, 256, origin=(0,0),displayInline=False)
 for i in range(0,len(aListInt)-2,5):
 	d.append(draw.Line(aListInt[i], 256-aListInt[i+1], aListInt[i+5], 256-aListInt[i+6],stroke=getHexFunction(aListInt[i+2],aListInt[i+3],aListInt[i+4]), stroke_width=0.2))
 
-d.saveSvg('test.svg')
+d.save_svg('test.svg')
