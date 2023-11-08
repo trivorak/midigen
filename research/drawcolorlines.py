@@ -7,9 +7,14 @@ from PIL import Image, ImageDraw
 #scaleSize = 1
 # arg for scale
 if (len(sys.argv) > 1 ):
-  scaleSize = int(sys.argv[1])
+	scaleSize = int(sys.argv[1])
 else:
-  scaleSize = 1
+	scaleSize = 1
+
+if (len(sys.argv) > 2):
+	outputFilePath = sys.argv[2]+".png"
+else:
+	outputFilePath = "outputColorLines.png"
 
 ## Input Static for example
 # a = input("Hex String: ")
@@ -52,4 +57,4 @@ print(len(aListInt))
 for i in range(0,len(aListInt)-2,5):
 	draw.line(xy=(round(aListInt[i]*scaleSize,0),round(aListInt[i+1]*scaleSize,0),round(aListInt[i+5]*scaleSize,0),round(aListInt[i+6]*scaleSize,0)),fill=(aListInt[i+2],aListInt[i+3],aListInt[i+4],255))
 
-im.save("outputColorLines.png")
+im.save(outputFilePath)
