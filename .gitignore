@@ -5,6 +5,6 @@
 *.mid
 *.norm
 *.svg
-.idea/
+.idea/*
 __pycache__
 input.txt
